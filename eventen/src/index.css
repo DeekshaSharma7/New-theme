@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* If dark.css is present it defines variables; fallbacks here keep things readable */
+html, body {
+  background: var(--color-background, #0b0f14);
+  color: var(--color-text, #e6eef6);
+}
+
+/* Optional class-based toggles */
+.theme-light html, .theme-light body {
+  background: #ffffff !important;
+  color: #222222 !important;
+}

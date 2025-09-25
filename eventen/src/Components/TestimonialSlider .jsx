@@ -44,7 +44,7 @@ const TestimonialSlider = () => {
             <div className="box1 mx-4 p-6 rounded bg-white" key={index}>
               <div className="testimonial-content position-relative">
                 <i className="fa fa-quote-left position-absolute" aria-hidden="true"></i>
-              <p class="my-6 position-relative w-md-75 ms-6">{item.text}</p>
+              <p class="my-6 position-relative w-md-75 ms-6 text-black">{item.text}</p>
               </div>
               <div className="testimonial-bio d-flex align-items-center">
                 <img src={item.image} alt={item.name} className="bio-img me-5 rounded-circle float-start" width={60} />

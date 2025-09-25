@@ -364,14 +364,11 @@
 
 /*Feature CSS*/
 .feature{
-  background-image: url(../images/background/5.jpg);
+  /* background-image: url(../images/background/5.jpg); */
   background-size:auto;
   background-position: top center;
 }
 
-.feature .overlay{
-  background-image: linear-gradient(180deg, var(--color-accent) 0%, var(--color-primary) 100%);
-}
 
 /* Banner: hide legacy overlay and use video background */
 .banner .overlay{ display: none !important; }
@@ -492,11 +489,12 @@
   background-image: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 100%);
 }
 
-
 /*Schedules*/
-.schedules{
-  background-image: linear-gradient(90deg,var(--color-background) 50%, #F7F7F7 50%)
+.schedules {
+  background-color: #000000; /* full black */
+  background-image: none;    /* remove gradient if present */
 }
+
 
 .schedule-day::after{
   position: absolute;
@@ -671,7 +669,7 @@
 
 /* FAQ */
 .faq{
-  background-image: url(../images/background/5.jpg);
+  /* background-image: url(../images/background/5.jpg); */
   background-repeat: no-repeat;
   background-size:cover;
 }
@@ -732,14 +730,14 @@ box-shadow: none;
 }
 
 /* Subscribe */
-.subscribe{
+/* .subscribe{
   background-image: linear-gradient(90deg,var(--color-primary) 0%, var(--color-secondary) 95%);
-}
+} */
 
 /* footer */
 
 footer{
-  background-image: url(../images/background/5.jpg);
+  /* background-image: url(../images/background/5.jpg); */
   background-repeat: no-repeat;
   background-size:auto;
   background-position: top center;
