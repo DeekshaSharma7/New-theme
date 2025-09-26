@@ -76,7 +76,7 @@ function Speakerdetail() {
                                     <ul className="m-0 p-0 d-flex gap-2">
                                         {['facebook', 'twitter', 'google', 'instagram', 'youtube-play'].map((icon, i) => (
                                         <li key={i} className="d-inline">
-                                            <a href="#" className="d-inline-block rounded-circle bg-white  bg-opacity-25">
+                                            <a href="/" className="d-inline-block rounded-circle bg-white  bg-opacity-25">
                                             <i className={`fa fa-${icon}`}></i>
                                             </a>
                                         </li>
@@ -91,7 +91,7 @@ function Speakerdetail() {
                                 </div>
                                 <div className="contact-detail">
                                 <span className="fw-semibold black text-uppercase my-1 lh-base">Email Address</span>
-                                <a><p className="m-0">gerardo@eventen.com</p></a>
+                                <a href="/"><p className="m-0">gerardo@eventen.com</p></a>
                                 </div>  
                             </div>
                             <div className="contact-info-list d-flex align-items-center pb-4 mb-4 lh-base border-dashed-bottom-1">
@@ -100,7 +100,7 @@ function Speakerdetail() {
                                 </div>
                                 <div className="contact-detail">
                                 <span className="fw-semibold black text-uppercase my-1">Phone No.</span>
-                                <a><p className="m-0">+01 234 567 890</p></a>
+                                <a href="/"><p className="m-0">+01 234 567 890</p></a>
                                 </div>  
                             </div>
                             <div className="contact-info-list d-flex align-items-center pb-4 lh-base border-0">
@@ -109,7 +109,7 @@ function Speakerdetail() {
                                 </div>
                                 <div className="contact-detail">
                                 <span className="fw-semibold black text-uppercase my-1 lh-base">Address</span>
-                                <a><p className="m-0">24 Callison Lane Boy, New Street, NY</p></a>
+                                <a href="/"><p className="m-0">24 Callison Lane Boy, New Street, NY</p></a>
                                 </div>  
                             </div>
                             </div>

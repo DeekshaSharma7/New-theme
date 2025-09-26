@@ -20,7 +20,7 @@ function Error() {
                     <div className='line-icon text-blue align-items-center'><i className="fa fa-star-o" aria-hidden="true"></i></div>
                 </div>
                 <div className="search">
-                    <p className="mb-4">You can navigate through our menu or use this search bar:</p>
+                    <p className="mb-4 text-black">You can navigate through our menu or use this search bar:</p>
                     <div className="searchbar d-flex justify-content-center">
                     <input type="search" id="form1" className=" mb-0 w-lg-50 rounded-end-0 " placeholder="Search..."/>
                         <button type="button" className="btn rounded-start-0" data-mdb-ripple-init>

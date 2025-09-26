@@ -164,7 +164,7 @@ function Bloglists() {
                                 <ul className="m-0 p-0 d-flex gap-2 justify-content-center">
                                     {['facebook', 'twitter', 'google', 'instagram', 'youtube-play'].map((icon, i) => (
                                     <li key={i} className="d-inline">
-                                        <a href="#" className="d-inline-block rounded-circle text-grey border border-1 border-grey">
+                                        <a href="/" className="d-inline-block rounded-circle text-grey border border-1 border-grey">
                                         <i className={`fa fa-${icon}`}></i>
                                         </a>
                                     </li>
@@ -177,22 +177,22 @@ function Bloglists() {
                             <div className="sperator mb-4 m-0 w-20  border-bottom border-2 border-pink"></div>
                             <ul className="m-0 p-0 list-unstyled">
                                 <li className="py-3 border-bottom border-1 border-grey border-opacity-50 border-bottom-dashed">
-                                <a href="" className="text-grey"><i className="fa fa-check pink pe-3" aria-hidden="true"></i>Online Ticketing</a>
+                                <a href="/" className="text-grey"><i className="fa fa-check pink pe-3" aria-hidden="true"></i>Online Ticketing</a>
                                 </li>
                                 <li className="py-3 border-bottom border-1 border-grey border-opacity-50 border-bottom-dashed">
-                                <a href="" className="text-grey"><i className="fa fa-check pink pe-3" aria-hidden="true"></i>Conference</a>
+                                <a href="/" className="text-grey"><i className="fa fa-check pink pe-3" aria-hidden="true"></i>Conference</a>
                                 </li>
                                 <li className="py-3 border-bottom border-1 border-grey border-opacity-50 border-bottom-dashed">
-                                <a href="" className="text-grey"><i className="fa fa-check pink pe-3" aria-hidden="true"></i>Marketing Event</a>
+                                <a href="/" className="text-grey"><i className="fa fa-check pink pe-3" aria-hidden="true"></i>Marketing Event</a>
                                 </li>
                                 <li className="py-3 border-bottom border-1 border-grey border-opacity-50 border-bottom-dashed">
-                                <a href="" className="text-grey"><i className="fa fa-check pink pe-3" aria-hidden="true"></i>SEO Conference</a>
+                                <a href="/" className="text-grey"><i className="fa fa-check pink pe-3" aria-hidden="true"></i>SEO Conference</a>
                                 </li>
                                 <li className="py-3 border-bottom border-1 border-grey border-opacity-50 border-bottom-dashed">
-                                <a href="" className="text-grey"><i className="fa fa-check pink pe-3" aria-hidden="true"></i>Resonable Service</a>
+                                <a href="/" className="text-grey"><i className="fa fa-check pink pe-3" aria-hidden="true"></i>Resonable Service</a>
                                 </li>
                                 <li className="pt-3 border-0">
-                                <a href="" className="text-grey"><i className="fa fa-check pink pe-3" aria-hidden="true"></i>Digital Marketing</a>
+                                <a href="/" className="text-grey"><i className="fa fa-check pink pe-3" aria-hidden="true"></i>Digital Marketing</a>
                                 </li>
                             </ul>
                         </div>
@@ -204,7 +204,7 @@ function Bloglists() {
                                 <div className="col-lg-12 col-md-6">
                                     <div className="recent-post d-flex align-items-center  mb-4">
                                         <div className="post-img">
-                                            <Link to="/Blogsingle"><img src="assets/images/group/6.jpg" alt="Blog Image" className="me-3"/></Link>
+                                            <Link to="/Blogsingle"><img src="assets/images/group/6.jpg" alt="Blog" className="me-3"/></Link>
                                         </div>
                                         <div className="post-detail">
                                             <Link to="/Blogsingle"  className="black fw-bold text-uppercase">The Top Music Festivals in NYC</Link>
@@ -215,7 +215,7 @@ function Bloglists() {
                                 <div className="col-lg-12 col-md-6">
                                     <div className="recent-post d-flex align-items-center mb-4">
                                         <div className="post-img">
-                                            <Link to="/Blogsingle"><img src="assets/images/group/7.jpg" alt="Blog Image" className="me-3"/></Link>
+                                            <Link to="/Blogsingle"><img src="assets/images/group/7.jpg" alt="Blog" className="me-3"/></Link>
                                         </div>
                                         <div className="post-detail">
                                             <Link to="/Blogsingle"  className="black fw-bold text-uppercase">Live Interview from conference</Link>
@@ -226,7 +226,7 @@ function Bloglists() {
                                 <div className="col-lg-12 col-md-6">
                                     <div className="recent-post d-flex align-items-center mb-4">
                                         <div className="post-img">
-                                            <Link to="/Blogsingle"><img src="assets/images/group/4.jpg" alt="Blog Image" className="me-3"/></Link>
+                                            <Link to="/Blogsingle"><img src="assets/images/group/4.jpg" alt="Blog" className="me-3"/></Link>
                                         </div>
                                         <div className="post-detail">
                                             <Link to="/Blogsingle"  className="black fw-bold text-uppercase">Registration for opening workshop</Link>
@@ -243,16 +243,16 @@ function Bloglists() {
                             <div className="social-media-inner">
                                 <div className="row g-3">
                                 <div className="col-6">
-                                    <a className="btn rounded-3 p-2 text-capitalize w-100 text-start"><i className="fa fa-facebook-official rounded mx-2 me-3" aria-hidden="true"></i>Facebook</a>
+                                    <a  href="/" className="btn rounded-3 p-2 text-capitalize w-100 text-start"><i className="fa fa-facebook-official rounded mx-2 me-3" aria-hidden="true"></i>Facebook</a>
                                 </div>
                                 <div className="col-6">
-                                    <a className="btn rounded-3 p-2 text-capitalize w-100 text-start"><i className="fa fa-twitter rounded mx-2 me-3" aria-hidden="true"></i>Twitter</a>
+                                    <a href="/" className="btn rounded-3 p-2 text-capitalize w-100 text-start"><i className="fa fa-twitter rounded mx-2 me-3" aria-hidden="true"></i>Twitter</a>
                                 </div>
                                 <div className="col-6">
-                                    <a className="btn rounded-3 p-2 text-capitalize w-100 text-start"><i className="fa fa-whatsapp rounded mx-2 me-3" aria-hidden="true"></i>WhatsApp</a>
+                                    <a href="/" className="btn rounded-3 p-2 text-capitalize w-100 text-start"><i className="fa fa-whatsapp rounded mx-2 me-3" aria-hidden="true"></i>WhatsApp</a>
                                 </div>
                                 <div className="col-6">
-                                    <a className="btn rounded-3 p-2 text-capitalize w-100 text-start"><i className="fa fa-linkedin-square rounded mx-2 me-3" aria-hidden="true"></i>LinkedIn</a>
+                                    <a href="/" className="btn rounded-3 p-2 text-capitalize w-100 text-start"><i className="fa fa-linkedin-square rounded mx-2 me-3" aria-hidden="true"></i>LinkedIn</a>
                                 </div>
                                 </div>
                             </div>

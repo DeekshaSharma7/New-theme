@@ -44,7 +44,7 @@ function Footer() {
                     <ul className="m-0 p-0 d-flex gap-2 justify-content-center">
                         {['facebook', 'twitter', 'google', 'instagram', 'youtube-play'].map((icon, i) => (
                         <li key={i} className="d-inline">
-                            <a href="#" className="d-inline-block rounded-circle bg-white  bg-opacity-25">
+                            <a href="/" className="d-inline-block rounded-circle bg-white  bg-opacity-25">
                             <i className={`fa fa-${icon}`}></i>
                             </a>
                         </li>

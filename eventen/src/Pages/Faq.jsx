@@ -31,7 +31,7 @@ function Faq() {
                             <div className="section-title pb-4 text-center text-lg-start">
                                 <p className="mb-1 pink">GENERAL QUESTIONS</p>
                                 <h2 className="mb-2">FREQUENT ASKED <span className="pink">QUESTIONS!!</span></h2>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p className='text-black'>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             </div>
                             <div className="faq-accordion p-4 bg-white rounded border border-2 border-light-subtle">
                                 <div className="accordion accordion-faq " id="accordionFlushExample">
@@ -85,7 +85,7 @@ function Faq() {
                                 <div className="section-title pb-4 text-center text-lg-start">
                                     <p className="mb-1 pink">POPULAR QUESTIONS</p>
                                     <h2 className="mb-">Eventen's <span className="pink">FAQ!!</span></h2>
-                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p className='text-black'>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 </div>
                                 <div className="faq-accordion p-4 mb-6 bg-white rounded">
                                     <div className="accordion accordion-faq" id="accordionExample">
@@ -127,7 +127,7 @@ function Faq() {
                             <div className="faq-form bg-white rounded box-shadow p-6 ms-4 m-sm-0">
                                 <div className="form-title mb-4">
                                     <h2 className="mb-2">Still have a <span className="pink">Question</span>?</h2>
-                                    <p className="m-0">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p className="m-0 text-black">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 </div>
                                 <div className="form-content justify-content-between">
                                     <form>
@@ -144,7 +144,7 @@ function Faq() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <textarea placeholder="How may we help you?" rows="4" className="mb-3"></textarea>
+                                        <textarea placeholder="How may we help you?" rows="4" className="mb-3 bg-[#707070]"></textarea>
                                         <button className="btn mb-5" id="sub-btn">SEND MESSAGE</button>
                                     </form>  
                                 </div>

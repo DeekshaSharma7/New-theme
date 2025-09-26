@@ -56,7 +56,7 @@ a:hover { color: #a7fff3 !important; }
 
 /* Inputs / Search popup */
 #search1 { background-color: rgba(10,14,18,0.95) !important; }
-#search1 .form-control, textarea { background: #071216 !important; color: var(--color-text) !important; border-color: rgba(255,255,255,0.04) !important; }
+#search1 .form-control, textarea { background: #F7F7F7 !important; color: var(--color-text) !important; border-color: rgba(255,255,255,0.04) !important; }
 
 /* Banners and overlays */
 .banner, .feature, .feature .overlay {
@@ -65,7 +65,7 @@ a:hover { color: #a7fff3 !important; }
 .banner .wave .elementor-shape-fill { fill: var(--color-background); }
 
 /* Misc */
-.partner-img-box img { opacity: 0.95; filter: brightness(0.9); }
+.partner-img-box img { opacity: 0.95; filter: brightness(1.9); }
 .countdown-inner span { color: #3b9525 !important; }
 pre, code { background: #071216 !important; color: var(--color-text) !important; border: 1px solid rgba(255,255,255,0.04); }
 

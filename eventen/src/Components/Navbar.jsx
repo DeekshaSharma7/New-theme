@@ -17,7 +17,7 @@ const Navbar = () => {
 
           {/* Dropdown example: use button for toggler */}
           <li className="nav-item dropdown">
-            <a href=''
+            <a href='/'
               className="nav-link dropdown-toggle px-2 my-4 py-0 text-white"
               id="speakerDropdown"
               data-bs-toggle="dropdown"
@@ -42,7 +42,7 @@ const Navbar = () => {
           {/* Repeat the same pattern for other dropdowns */}
 
           <li className="nav-item dropdown">
-            <a href=''
+            <a href='/'
               className="nav-link dropdown-toggle px-2 my-4 py-0 text-white"
               id="scheduleDropdown"
               data-bs-toggle="dropdown"
@@ -65,7 +65,7 @@ const Navbar = () => {
           </li>
 
           <li className="nav-item dropdown">
-            <a href=''
+            <a href='/'
               className="dropdown-toggle nav-link px-2 my-4 py-0 text-white"
               id="pagesDropdown"
               data-bs-toggle="dropdown"
@@ -87,7 +87,7 @@ const Navbar = () => {
           </li>
 
           <li className="nav-item dropdown">
-            <a href=''
+            <a href='/'
               className="nav-link dropdown-toggle px-2 my-4 py-0 text-white"
               id="newsDropdown"
               data-bs-toggle="dropdown"

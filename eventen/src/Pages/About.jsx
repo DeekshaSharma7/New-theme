@@ -28,7 +28,7 @@ function About() {
                     <div className="overview-event-info pb-6 g-4 text-start position-absolute">
                         <div className="row justify-content-around ">
                         <div className="col-lg-6 col-md-6">
-                            <a>
+                            <a href='/'>
                             <div className="event-info-box align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
                                 <div className="event-info-icon text-center ">
                                     <i className="fa fa-map-marker  text-white bg-pink rounded-circle me-3"></i>
@@ -41,7 +41,7 @@ function About() {
                             </a>
                         </div>
                         <div className="col-lg-6 col-md-6">
-                            <a>
+                            <a href='/'>
                             <div className="event-info-box align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
                                 <div className="event-info-icon text-center">
                                     <i className="fa fa-calendar-o  text-white bg-pink rounded-circle me-3"></i>
@@ -145,7 +145,7 @@ function About() {
                             </div>
                             <div className="overview-info">  
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p className="mb-0">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p className="mb-0 text-black">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <div className="overview-btn mt-4">
                                 <Link to="/Eventdetail" className="btn">Join Event<i className="fa fa-long-arrow-right ms-4"></i></Link>
                             </div>      
@@ -191,7 +191,7 @@ function About() {
                             <ul className="social-link pb-2 ps-0 d-flex gap-2 position-relative justify-content-center">
                                 {['facebook', 'twitter', 'google', 'instagram'].map((icon, i) => (
                                 <li key={i} className="d-inline-block">
-                                    <a href="#" className="rounded d-block">
+                                    <a href="/" className="rounded d-block">
                                     <i className={`fa fa-${icon}`}></i>
                                     </a>
                                 </li>
@@ -210,7 +210,7 @@ function About() {
                             <ul className="social-link pb-2 ps-0 d-flex gap-2 position-relative justify-content-center">
                                 {['facebook', 'twitter', 'google', 'instagram'].map((icon, i) => (
                                 <li key={i} className="d-inline-block">
-                                    <a href="#" className="rounded d-block">
+                                    <a href="/" className="rounded d-block">
                                     <i className={`fa fa-${icon}`}></i>
                                     </a>
                                 </li>
@@ -229,7 +229,7 @@ function About() {
                             <ul className="social-link pb-2 ps-0 d-flex gap-2 position-relative justify-content-center">
                                 {['facebook', 'twitter', 'google', 'instagram'].map((icon, i) => (
                                 <li key={i} className="d-inline-block">
-                                    <a href="#" className="rounded d-block">
+                                    <a href="/" className="rounded d-block">
                                     <i className={`fa fa-${icon}`}></i>
                                     </a>
                                 </li>
@@ -248,7 +248,7 @@ function About() {
                             <ul className="social-link pb-2 ps-0 d-flex gap-2 position-relative justify-content-center">
                                 {['facebook', 'twitter', 'google', 'instagram'].map((icon, i) => (
                                 <li key={i} className="d-inline-block">
-                                    <a href="#" className="rounded d-block">
+                                    <a href="/" className="rounded d-block">
                                     <i className={`fa fa-${icon}`}></i>
                                     </a>
                                 </li>
@@ -310,12 +310,12 @@ function About() {
                         <p className="pb-5 m-0">19 By Pass NR, Bali, Indonesia, BC 22196</p>
                         <h5 className="text-white pb-2">RECEPTION INFO:</h5>
                         <p className="pb-5 m-0">Booking: (+62) 1919-2020</p>
-                        <a>Get Directions</a>
+                        <a href='/'>Get Directions</a>
                         </div>
                     </div>
                     </div>
                     <div className="col-lg-7 col-md-7 px-1 py-2">
-                    <iframe height="400" className="rounded w-100"
+                    <iframe title='Eventen' height="400" className="rounded w-100"
                         src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=+(mangal%20bazar)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                     </div>
                 </div>
@@ -323,13 +323,13 @@ function About() {
                 <div className="location-gallery">
                 <div id="selector" className="row pt-1 justify-content-center">
                     <div className="item col-lg-4 col-md-6 p-1" data-src="images/group/4.jpg">
-                    <a><img src="assets/images/thumbnail/8.jpg" className="w-100 rounded" alt="VR Presentation and conference"/></a>
+                    <a href='/'><img src="assets/images/thumbnail/8.jpg" className="w-100 rounded" alt="VR Presentation and conference"/></a>
                     </div>
                     <div className="item col-lg-4 col-md-6 p-1" data-src="images/group/7.jpg">
-                    <a><img src="assets/images/thumbnail/7.jpg" className="w-100 rounded" alt="VR Presentation and conference"/></a>
+                    <a href='/'><img src="assets/images/thumbnail/7.jpg" className="w-100 rounded" alt="VR Presentation and conference"/></a>
                     </div>
                     <div className="item col-lg-4 col-md-6 p-1" data-src="images/group/1.jpg">
-                    <a><img src="assets/images/thumbnail/9.jpg" className="w-100 rounded" alt="VR Presentation and conference"/></a>
+                    <a href='/'><img src="assets/images/thumbnail/9.jpg" className="w-100 rounded" alt="VR Presentation and conference"/></a>
                     </div>
                 </div>
                 </div>
