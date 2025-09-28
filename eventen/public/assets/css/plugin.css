@@ -388,9 +388,9 @@ Change the following styles to modify the appearance of the menu.
 
 @media (max-width: 479px) {
     .slicknav_btn.slicknav_open:before, .slicknav_btn.slicknav_collapsed:before {
-        color: white;
+        /* color: white; */
         position: absolute;
-        top: -40px;
+        top: -38px;
         left: -20px;
     }
     .slicknav_nav{

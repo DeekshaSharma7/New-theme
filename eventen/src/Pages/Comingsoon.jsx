@@ -11,7 +11,7 @@ function Comingsoon() {
             <div className="container">
                 <div className="coming-soon-inner w-lg-80 m-auto position-relative">
                     <div className="logo">
-                        <img src="assets/logo.png" alt="Eventen logo" className="w-25 mb-6"/>
+                        <img src="assets/foodLogo.jpg" alt="Eventen logo" className="w-25 mb-6"/>
                     </div>
                     <div className="coming-soon-title">
                         <h1 className="text-white mb-6">Something Awesome is coming</h1>

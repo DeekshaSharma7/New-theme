@@ -5,11 +5,11 @@ import App from './App';
 // Import app-level CSS (kept minimal) and ensure dark overrides are available in build.
 import './index.css';
 
-// Dynamically load dark.css from the public folder so the app defaults to dark theme
-const darkLink = document.createElement('link');
-darkLink.rel = 'stylesheet';
-darkLink.href = process.env.PUBLIC_URL + '/assets/css/dark.css';
-document.head.appendChild(darkLink);
+// Dynamically load light.css from the public folder so the app defaults to light (white) theme
+const themeLink = document.createElement('link');
+themeLink.rel = 'stylesheet';
+themeLink.href = process.env.PUBLIC_URL + '/assets/css/light.css';
+document.head.appendChild(themeLink);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

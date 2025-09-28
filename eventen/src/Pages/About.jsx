@@ -184,7 +184,7 @@ function About() {
                     <div className=" col-lg-3 col-md-6 p-2">
                     <div className="speaker-box  position-relative overflow-hidden text-white">
                         <img className="speaker-image rounded w-100" src="assets/images/speakers/1.jpg" alt="speaker-image"/>
-                        <div className="box-content position-absolute bottom-0 z-1">
+                        <div className="box-content position-absolute bottom-0 z-1 ">
                             <h6 className="speaker-title d-block text-white pb-1"><Link to="/Speakerdetail">GERARDO AMBROSE</Link>
                             </h6>
                             <span className="speaker-post d-block pb-2">Marketing Expert</span>

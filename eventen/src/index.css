@@ -12,14 +12,14 @@ code {
     monospace;
 }
 
-/* If dark.css is present it defines variables; fallbacks here keep things readable */
-html, body {
-  background: var(--color-background, #0b0f14);
-  color: var(--color-text, #e6eef6);
-}
+/* Default to light theme (white background). Theme CSS can override these variables. */
+/* html, body {
+  background: var(--color-background, #ffffff);
+  color: var(--color-text, #223645);
+} */
 
 /* Optional class-based toggles */
-.theme-light html, .theme-light body {
-  background: #ffffff !important;
-  color: #222222 !important;
+.theme-dark html, .theme-dark body {
+  background: #0b0f14 !important;
+  color: #e6eef6 !important;
 }

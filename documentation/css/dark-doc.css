@@ -4,13 +4,13 @@
   --color-text: #e6eef6;
   --color-background: #0b0f14;
 }
-html, body { background: var(--color-background) !important; color: var(--color-text) !important; }
+/* html, body { background: var(--color-background) !important; color: var(--color-text) !important; } */
 #documenter_sidebar { background: #072026 !important; }
 #documenter_sidebar a#documenter_logo, #documenter_sidebar ol a { color: var(--color-text) !important; }
 #documenter_content { background: transparent !important; color: var(--color-text) !important; }
 #documenter_content h1, #documenter_content h2, #documenter_content h3 { color: var(--color-text) !important; }
 #documenter_content pre, #documenter_content code { background: #071216 !important; color: var(--color-text) !important; border: 1px solid rgba(255,255,255,0.04); }
-a { color: var(--color-accent) !important; }
+/* a { color: var(--color-accent) !important; } */
 #documenter_copyright { background: #071216 !important; color: var(--color-text) !important; }
 hr { border-top-color: rgba(255,255,255,0.06) !important; }
 /* make images slightly dimmer to fit the aesthetic */

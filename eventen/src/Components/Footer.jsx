@@ -35,7 +35,7 @@ function Footer() {
             <div className="container">
             <div className="footer-content w-lg-50 m-auto">
                 <div className="footer-logo mb-4 pt-1">
-                <a href="index.html"><img src="assets/logo.png" className="w-50" alt="footer-logo"/></a>
+                <a href="index.html"><img src="/assets/foodLogo.jpg" className="w-50" alt="footer-logo"/></a>
                 </div>
                 <div className="footer-disciption border-bottom border-white border-opacity-25 m-auto mb-6">
                 <p className=" mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut

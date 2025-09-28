@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import CountUpBox from "../Components/CountUpBox";
 import TestimonialSlider from "../Components/TestimonialSlider ";
 import Gallery from "../Components/Gallery";
@@ -6,6 +6,36 @@ import { Link } from "react-router-dom";
 import Countdown from "../Components/Countdown";
 
 function Home() {
+
+  const [selectedSpeaker, setSelectedSpeaker] = useState(null);
+
+  const speakers = {
+    jesus: {
+      name: "JESUS HOLLAND",
+      role: "Host & Speaker",
+      img: "assets/images/team/1.jpg",
+      bio: "Expert in event hosting and motivational speaking.",
+    },
+      amit: {
+    name: "AMIT SHARMA",
+    role: "Keynote Speaker",
+    img: "assets/images/team/2.jpg",
+    bio: "Specialist in technology and innovation."
+  },
+    nelson: {
+      name: "NELSON KETY",
+      role: "Host & Speaker",
+      img: "assets/images/team/2.jpg",
+      bio: "Marketing strategist with 10+ years of experience.",
+    },
+    peelrs: {
+      name: "PEELRS HELM",
+      role: "Host & Speaker",
+      img: "assets/images/team/3.jpg",
+      bio: "Innovator in leadership and new approaches.",
+    },
+  };
+
   return (
     <div>
       {/*!-- Bannner section starts --*/}
@@ -140,10 +170,14 @@ function Home() {
                   <div className="overview-event-info pb-6 g-4 text-start position-absolute">
                     <div className="row justify-content-around ">
                       <div className="col-lg-6 col-md-6">
-                        <a>
+                        <a
+                          href="https://www.google.com/maps?q=Birmingham+City+Park+Hall,+London,+UK"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <div className="event-info-box align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
-                            <div className="event-info-icon text-center ">
-                              <i className="fa fa-map-marker  text-white bg-pink rounded-circle me-3"></i>
+                            <div className="event-info-icon text-center">
+                              <i className="fa fa-map-marker text-white bg-pink rounded-circle me-3 text-black"></i>
                             </div>
                             <div className="location-info">
                               <h5 className="mb-1">WHERE</h5>
@@ -154,11 +188,12 @@ function Home() {
                           </div>
                         </a>
                       </div>
+
                       <div className="col-lg-6 col-md-6">
                         <a>
                           <div className="event-info-box align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
                             <div className="event-info-icon text-center">
-                              <i className="fa fa-calendar-o  text-white bg-pink rounded-circle me-3"></i>
+                              <i className="fa fa-calendar-o  text-white bg-pink rounded-circle me-3 text-black"></i>
                             </div>
                             <div className="time-info">
                               <h5 className="mb-1">WHEN</h5>
@@ -331,25 +366,26 @@ function Home() {
       {/*--Partners Section end--*/}
 
       {/*--Features Section start--*/}
-      <section className="feature text-white position-relative z-0 start-0">
+      <section className="feature text-black position-relative z-0 start-0">
         <div className="overlay z-n1"></div>
         <div className="container">
           <div className="feature-inner">
-            <div className="counter text-center border-bottom border-white border-opacity-25">
+            {/* Counter Section */}
+            <div className="counter text-center border-bottom border-dark border-opacity-25">
               <div className="inner-counter mb-7">
                 <div className="row">
                   <div className="col-lg-3 col-md-3 p-2">
-                    <div className="counter-box p-2 border-end border-white border-opacity-25">
+                    <div className="counter-box p-2 border-end border-dark border-opacity-25">
                       <CountUpBox end={300} label="Journalist" />
                     </div>
                   </div>
                   <div className="col-lg-3 col-md-3 p-2">
-                    <div className="counter-box p-2 border-end border-white border-opacity-25">
+                    <div className="counter-box p-2 border-end border-dark border-opacity-25">
                       <CountUpBox end={120} label="Events" />
                     </div>
                   </div>
                   <div className="col-lg-3 col-md-3 p-2">
-                    <div className="counter-box p-2 border-end border-white border-opacity-25">
+                    <div className="counter-box p-2 border-end border-dark border-opacity-25">
                       <CountUpBox end={50} label="Awards" />
                     </div>
                   </div>
@@ -361,17 +397,20 @@ function Home() {
                 </div>
               </div>
             </div>
+
+            {/* Feature Boxes */}
             <div className="feature-lists pt-8">
               <div className="row g-4">
+                {/* Box 1 */}
                 <div className="col-lg-4 col-md-6">
-                  <div className="feature-box py-7 px-6 rounded text bg-black bg-opacity-25">
+                  <div className="feature-box py-7 px-6 rounded bg-light bg-opacity-75 shadow-sm">
                     <a>
                       <div className="feature-box-icon mb-4">
-                        <i className="fa fa-address-book-o text-white bg-pink rounded-circle text-center"></i>
+                        <i className="fa fa-address-book-o text-black bg-pink rounded-circle text-center p-3"></i>
                       </div>
-                      <div className="feature-box-info ">
-                        <h5 className="text-white mb-2">LIVE STREAMING</h5>
-                        <small>
+                      <div className="feature-box-info">
+                        <h5 className="text-black mb-2">LIVE STREAMING</h5>
+                        <small className="text-muted">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiusmod tempor incididunt ut labore et
                           dolore.
@@ -380,15 +419,17 @@ function Home() {
                     </a>
                   </div>
                 </div>
+
+                {/* Box 2 */}
                 <div className="col-lg-4 col-md-6">
-                  <div className="feature-box py-7 px-6 rounded  bg-black bg-opacity-25">
+                  <div className="feature-box py-7 px-6 rounded bg-light bg-opacity-75 shadow-sm">
                     <a>
                       <div className="feature-box-icon mb-4">
-                        <i className="fa fa-comments text-white bg-pink rounded-circle text-center"></i>
+                        <i className="fa fa-comments text-black bg-pink rounded-circle text-center p-3"></i>
                       </div>
                       <div className="feature-box-info">
-                        <h5 className="text-white mb-2">FIRESIDE CHATS</h5>
-                        <small>
+                        <h5 className="text-black mb-2">FIRESIDE CHATS</h5>
+                        <small className="text-muted">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiusmod tempor incididunt ut labore et
                           dolore.
@@ -397,15 +438,17 @@ function Home() {
                     </a>
                   </div>
                 </div>
+
+                {/* Box 3 */}
                 <div className="col-lg-4 col-md-6">
-                  <div className="feature-box py-7 px-6 rounded bg-black bg-opacity-25">
+                  <div className="feature-box py-7 px-6 rounded bg-light bg-opacity-75 shadow-sm">
                     <a>
                       <div className="feature-box-icon mb-4">
-                        <i className="fa fa-desktop text-white bg-pink rounded-circle text-center"></i>
+                        <i className="fa fa-desktop text-black bg-pink rounded-circle text-center p-3"></i>
                       </div>
                       <div className="feature-box-info">
-                        <h5 className="text-white mb-2">NETWORKING</h5>
-                        <small>
+                        <h5 className="text-black mb-2">NETWORKING</h5>
+                        <small className="text-muted">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiusmod tempor incididunt ut labore et
                           dolore.
@@ -414,15 +457,17 @@ function Home() {
                     </a>
                   </div>
                 </div>
+
+                {/* Box 4 */}
                 <div className="col-lg-4 col-md-6">
-                  <div className="feature-box py-7 px-6 rounded bg-black bg-opacity-25">
+                  <div className="feature-box py-7 px-6 rounded bg-light bg-opacity-75 shadow-sm">
                     <a>
                       <div className="feature-box-icon mb-4">
-                        <i className="fa fa-cogs text-white bg-pink rounded-circle text-center"></i>
+                        <i className="fa fa-cogs text-black bg-pink rounded-circle text-center p-3"></i>
                       </div>
                       <div className="feature-box-info">
-                        <h5 className="text-white mb-2">HIGH VALUE LEARNING</h5>
-                        <small>
+                        <h5 className="text-black mb-2">HIGH VALUE LEARNING</h5>
+                        <small className="text-muted">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiusmod tempor incididunt ut labore et
                           dolore.
@@ -431,15 +476,17 @@ function Home() {
                     </a>
                   </div>
                 </div>
+
+                {/* Box 5 */}
                 <div className="col-lg-4 col-md-6">
-                  <div className="feature-box py-7 px-6 rounded bg-black bg-opacity-25">
+                  <div className="feature-box py-7 px-6 rounded bg-light bg-opacity-75 shadow-sm">
                     <a>
                       <div className="feature-box-icon mb-4">
-                        <i className="fa fa-gift text-white bg-pink rounded-circle text-center"></i>
+                        <i className="fa fa-gift text-black bg-pink rounded-circle text-center p-3"></i>
                       </div>
                       <div className="feature-box-info">
-                        <h5 className="text-white mb-2">EXICITING GIVEAWAYS</h5>
-                        <small>
+                        <h5 className="text-black mb-2">EXCITING GIVEAWAYS</h5>
+                        <small className="text-muted">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiusmod tempor incididunt ut labore et
                           dolore.
@@ -448,15 +495,17 @@ function Home() {
                     </a>
                   </div>
                 </div>
+
+                {/* Box 6 */}
                 <div className="col-lg-4 col-md-6">
-                  <div className="feature-box py-7 px-6 rounded bg-black bg-opacity-25">
+                  <div className="feature-box py-7 px-6 rounded bg-light bg-opacity-75 shadow-sm">
                     <a>
                       <div className="feature-box-icon mb-4">
-                        <i className="fa fa-graduation-cap text-white bg-pink rounded-circle text-center"></i>
+                        <i className="fa fa-graduation-cap text-black bg-pink rounded-circle text-center p-3"></i>
                       </div>
                       <div className="feature-box-info">
-                        <h5 className="text-white mb-2">1-ON-1 SESSIONS</h5>
-                        <small>
+                        <h5 className="text-black mb-2">1-ON-1 SESSIONS</h5>
+                        <small className="text-muted">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiusmod tempor incididunt ut labore et
                           dolore.
@@ -470,8 +519,8 @@ function Home() {
           </div>
         </div>
       </section>
-      {/*--Features Section end--*/}
 
+      {/*--Features Section end--*/}
       {/*--Speakers Section Start--*/}
       <section className="speakers">
         <div className="container">
@@ -626,8 +675,8 @@ function Home() {
         <div className="container">
           <div className="ticket-inner w-lg-75 mx-auto text-center position-relative text-white">
             <div className="ticket-title">
-              <h5 className="text-white mb-1">LET'S DO IT HURRY</h5>
-              <h1 className="text-white mb-2">
+              <h5 className="text-black mb-1">LET'S DO IT HURRY</h5>
+              <h1 className="text-black mb-2">
                 HAVEN'T BOOKED YOUR SEAT YET?{" "}
                 <span className="pink">Get Ticket</span>
               </h1>
@@ -721,13 +770,28 @@ function Home() {
                             />
                           </div>
                           <div className="schedule-bio-info">
-                            <p className="mt-1 mb-0">
-                              <Link to="/Eventdetail" className="pink">
-                                JESUS HOLLAND
-                              </Link>
-                            </p>
-                            <small>Host & Speaker</small>
-                          </div>
+              <p className="mt-1 mb-0">
+                <button
+                  className="pink border-0 bg-transparent"
+                  onClick={() => setSelectedSpeaker(speakers.jesus)}
+                >
+                  JESUS HOLLAND
+                </button>
+              </p>
+              <small>Host & Speaker</small>
+            </div>
+
+             <div className="schedule-bio-info">
+              <p className="mt-1 mb-0">
+                <button
+                  className="pink border-0 bg-transparent"
+                  onClick={() => setSelectedSpeaker(speakers.amit)}
+                >
+                  AMIT SHARMA
+                </button>
+              </p>
+              <small>Keynote Speaker</small>
+            </div>
                         </div>
                       </div>
                       <div className=" schedule-list-box bg-lightgrey   border border-white border-2 rounded px-6 py-4 mb-5">
@@ -772,14 +836,18 @@ function Home() {
                               className="me-2 rounded-circle"
                             />
                           </div>
-                          <div className="schedule-bio-info">
-                            <p className="mt-1 mb-0">
-                              <Link to="/Eventdetail" className="pink">
-                                NELSON KETY
-                              </Link>
-                            </p>
-                            <small>Host & Speaker</small>
-                          </div>
+                           <div className="schedule-bio-info">
+              <p className="mt-1 mb-0">
+                <button
+                  className="pink border-0 bg-transparent"
+                  onClick={() => setSelectedSpeaker(speakers.nelson)}
+                >
+                  NELSON KETY
+                </button>
+              </p>
+              <small>Host & Speaker</small>
+            </div>
+
                         </div>
                       </div>
                     </div>
@@ -844,13 +912,16 @@ function Home() {
                             />
                           </div>
                           <div className="schedule-bio-info">
-                            <p className="mt-1 mb-0">
-                              <Link to="/Eventdetail" className="pink">
-                                PEELRS HELM
-                              </Link>
-                            </p>
-                            <small>Host & Speaker</small>
-                          </div>
+              <p className="mt-1 mb-0">
+                <button
+                  className="pink border-0 bg-transparent"
+                  onClick={() => setSelectedSpeaker(speakers.peelrs)}
+                >
+                  PEELRS HELM
+                </button>
+              </p>
+              <small>Host & Speaker</small>
+            </div>
                         </div>
                       </div>
                       <div className=" schedule-list-box bg-lightgrey   border border-white border-2 rounded px-6 py-4 mb-5">
@@ -1543,6 +1614,32 @@ function Home() {
         </div>
       </section>
       {/*--Blog Section end--*/}
+
+       {/* Modal */}
+      {selectedSpeaker && (
+        <div className="modal-overlay" onClick={() => setSelectedSpeaker(null)}>
+          <div
+            className="modal-box bg-white p-4 rounded"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="close-btn"
+              onClick={() => setSelectedSpeaker(null)}
+            >
+              ✖
+            </button>
+            <img
+              src={selectedSpeaker.img}
+              alt={selectedSpeaker.name}
+              className="rounded-circle mb-3"
+              width="120"
+            />
+            <h3>{selectedSpeaker.name}</h3>
+            <p>{selectedSpeaker.role}</p>
+            <p>{selectedSpeaker.bio}</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

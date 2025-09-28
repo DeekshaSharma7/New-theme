@@ -1,0 +1,15 @@
+/* Light theme for documentation */
+:root{
+  --color-accent: #13812a;
+  --color-text: #223645;
+  --color-background: #ffffff;
+}
+/* html, body { background: var(--color-background) !important; color: var(--color-text) !important; } */
+#documenter_sidebar { background: #ffffff !important; }
+#documenter_sidebar a#documenter_logo, #documenter_sidebar ol a { color: var(--color-text) !important; }
+#documenter_content { background: transparent !important; color: var(--color-text) !important; }
+#documenter_content h1, #documenter_content h2, #documenter_content h3 { color: var(--color-text) !important; }
+#documenter_content pre, #documenter_content code { background: #f5f5f5 !important; color: var(--color-text) !important; border: 1px solid rgba(0,0,0,0.06); }
+/* a { color: var(--color-accent) !important; } */
+#documenter_copyright { background: #ffffff !important; color: var(--color-text) !important; }
+hr { border-top-color: rgba(0,0,0,0.06) !important; }

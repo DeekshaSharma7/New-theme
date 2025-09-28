@@ -251,7 +251,7 @@
 
 
 .countdown-inner span{
-  color: rgba(84,198,165,0.63); /* semi-transparent accent (approx) */
+  color: #3b9525; /* semi-transparent accent (approx) */
 }
 
 .banner-image{
@@ -274,7 +274,7 @@
 }
 
 .wave .elementor-shape-fill{
-  fill: var(--color-text);
+  fill: #495057c4;
   transform-origin: center;
   transform: rotateY(0deg);
 }
@@ -388,7 +388,7 @@
 .feature-box i{
   width:70px;
   height:70px;
-  line-height:70px;
+  line-height:42px;
   font-size: 35px;
   transition: all .5s ease-in-out;
 }
@@ -422,6 +422,7 @@
 .speaker-box:after{
   content:"";
   height:100%; 
+  color: #fff;
 }
   
 .speaker-box .social-link li a{
@@ -491,7 +492,7 @@
 
 /*Schedules*/
 .schedules {
-  background-color: #000000; /* full black */
+   /* full black */
   background-image: none;    /* remove gradient if present */
 }
 
@@ -655,7 +656,7 @@
 }
 
 .testimonial-content i{
-  color: #f3efef;
+  color: #13812a;
   font-size: 70px;
   top:-30px;
 }
