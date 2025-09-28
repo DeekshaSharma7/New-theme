@@ -22,7 +22,7 @@ const Header = () => {
                       "youtube-play",
                     ].map((icon, i) => (
                       <li key={i} className="d-inline">
-                        <a href="#">
+                        <a href="/">
                           <i
                             className={`fa fa-${icon} border-social rounded-circle text-center`}
                           ></i>

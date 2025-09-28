@@ -190,7 +190,7 @@ function Home() {
                       </div>
 
                       <div className="col-lg-6 col-md-6">
-                        <a>
+                        <a href="/">
                           <div className="event-info-box align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
                             <div className="event-info-icon text-center">
                               <i className="fa fa-calendar-o  text-white bg-pink rounded-circle me-3 text-black"></i>
@@ -404,7 +404,7 @@ function Home() {
                 {/* Box 1 */}
                 <div className="col-lg-4 col-md-6">
                   <div className="feature-box py-7 px-6 rounded bg-light bg-opacity-75 shadow-sm">
-                    <a>
+                    <a href="/">
                       <div className="feature-box-icon mb-4">
                         <i className="fa fa-address-book-o text-black bg-pink rounded-circle text-center p-3"></i>
                       </div>
@@ -423,7 +423,7 @@ function Home() {
                 {/* Box 2 */}
                 <div className="col-lg-4 col-md-6">
                   <div className="feature-box py-7 px-6 rounded bg-light bg-opacity-75 shadow-sm">
-                    <a>
+                    <a href="/">
                       <div className="feature-box-icon mb-4">
                         <i className="fa fa-comments text-black bg-pink rounded-circle text-center p-3"></i>
                       </div>
@@ -442,7 +442,7 @@ function Home() {
                 {/* Box 3 */}
                 <div className="col-lg-4 col-md-6">
                   <div className="feature-box py-7 px-6 rounded bg-light bg-opacity-75 shadow-sm">
-                    <a>
+                    <a href="/">
                       <div className="feature-box-icon mb-4">
                         <i className="fa fa-desktop text-black bg-pink rounded-circle text-center p-3"></i>
                       </div>
@@ -461,7 +461,7 @@ function Home() {
                 {/* Box 4 */}
                 <div className="col-lg-4 col-md-6">
                   <div className="feature-box py-7 px-6 rounded bg-light bg-opacity-75 shadow-sm">
-                    <a>
+                    <a href="/">
                       <div className="feature-box-icon mb-4">
                         <i className="fa fa-cogs text-black bg-pink rounded-circle text-center p-3"></i>
                       </div>
@@ -480,7 +480,7 @@ function Home() {
                 {/* Box 5 */}
                 <div className="col-lg-4 col-md-6">
                   <div className="feature-box py-7 px-6 rounded bg-light bg-opacity-75 shadow-sm">
-                    <a>
+                    <a href="/">
                       <div className="feature-box-icon mb-4">
                         <i className="fa fa-gift text-black bg-pink rounded-circle text-center p-3"></i>
                       </div>
@@ -499,7 +499,7 @@ function Home() {
                 {/* Box 6 */}
                 <div className="col-lg-4 col-md-6">
                   <div className="feature-box py-7 px-6 rounded bg-light bg-opacity-75 shadow-sm">
-                    <a>
+                    <a href="/">
                       <div className="feature-box-icon mb-4">
                         <i className="fa fa-graduation-cap text-black bg-pink rounded-circle text-center p-3"></i>
                       </div>
@@ -568,7 +568,7 @@ function Home() {
                         {["facebook", "twitter", "google", "instagram"].map(
                           (icon, i) => (
                             <li key={i} className="d-inline-block">
-                              <a href="#" className="rounded d-block">
+                              <a href="/" className="rounded d-block">
                                 <i className={`fa fa-${icon}`}></i>
                               </a>
                             </li>
@@ -596,7 +596,7 @@ function Home() {
                         {["facebook", "twitter", "google", "instagram"].map(
                           (icon, i) => (
                             <li key={i} className="d-inline-block">
-                              <a href="#" className="rounded d-block">
+                              <a href="/" className="rounded d-block">
                                 <i className={`fa fa-${icon}`}></i>
                               </a>
                             </li>
@@ -624,7 +624,7 @@ function Home() {
                         {["facebook", "twitter", "google", "instagram"].map(
                           (icon, i) => (
                             <li key={i} className="d-inline-block">
-                              <a href="#" className="rounded d-block">
+                              <a href="/" className="rounded d-block">
                                 <i className={`fa fa-${icon}`}></i>
                               </a>
                             </li>
@@ -652,7 +652,7 @@ function Home() {
                         {["facebook", "twitter", "google", "instagram"].map(
                           (icon, i) => (
                             <li key={i} className="d-inline-block">
-                              <a href="#" className="rounded d-block">
+                              <a href="/" className="rounded d-block">
                                 <i className={`fa fa-${icon}`}></i>
                               </a>
                             </li>
@@ -1187,7 +1187,7 @@ function Home() {
             </div>
             <p className="m-0">
               All prices exclude 25% VAT. For more details, view our{" "}
-              <a href="" className="pink">
+              <a href="/" className="pink">
                 Terms & Policy
               </a>
             </p>
@@ -1445,12 +1445,13 @@ function Home() {
                       </p>
                       <h5 className="text-white pb-2">RECEPTION INFO:</h5>
                       <p className="pb-5 m-0">Booking: (+62) 1919-2020</p>
-                      <a>Get Directions</a>
+                      <a href="/">Get Directions</a>
                     </div>
                   </div>
                 </div>
                 <div className="col-lg-7 col-md-7 px-1 py-2">
                   <iframe
+                  title="Mangal Bazar Location Map"
                     height="400"
                     className="rounded w-100"
                     src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=+(mangal%20bazar)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
@@ -1464,7 +1465,7 @@ function Home() {
                   className="item col-lg-4 col-md-6 p-1"
                   data-src="images/group/4.jpg"
                 >
-                  <a>
+                  <a href="/">
                     <img
                       src="assets/images/thumbnail/4.jpg"
                       className="w-100 rounded"
@@ -1476,7 +1477,7 @@ function Home() {
                   className="item col-lg-4 col-md-6 p-1"
                   data-src="images/group/7.jpg"
                 >
-                  <a>
+                  <a href="/">
                     <img
                       src="assets/images/thumbnail/7.jpg"
                       className="w-100 rounded"
@@ -1488,7 +1489,7 @@ function Home() {
                   className="item col-lg-4 col-md-6 p-1"
                   data-src="images/group/1.jpg"
                 >
-                  <a>
+                  <a href="/">
                     <img
                       src="assets/images/thumbnail/1.jpg"
                       className="w-100 rounded"
