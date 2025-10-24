@@ -38,11 +38,11 @@ const Header = () => {
                   <ul className="m-0 p-0">
                     <li className="px-2 border-end border-lightgrey border-opacity-50 d-inline">
                       <i className="fa fa-phone pe-1"></i>
-                      <small>+33 877 554 332</small>
+                      <small>+91 94660 39893</small>
                     </li>
                     <li className="px-2 border-end border-lightgrey border-opacity-50 d-inline">
                       <i className="fa fa-envelope-o pe-1"></i>
-                      <small>info@website.com</small>
+                      <small>contact@foodsecurity.com</small>
                     </li>
                     {/* <li className="px-2 d-inline">
                       <i className="fa fa-clock-o pe-1"></i>
@@ -81,7 +81,7 @@ const Header = () => {
                   style={{ fontWeight: 700 }}
                 >
                   {/* <Search /> */}
-                  <Link to="/Booknow" className="btn btn3 btn-effect-2">
+                  <Link to="/Booknow" className="btn btn3 btn-effect-2 btn-theme-action">
                     <span>Buy Ticket</span>{" "}
                     <i className="fa fa-long-arrow-right ms-4"></i>
                   </Link>

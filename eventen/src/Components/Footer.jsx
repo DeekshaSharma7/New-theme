@@ -13,13 +13,13 @@ function Footer() {
                 <div className="row">
                 <div className="col-lg-6 align-self-center ">
                     <div className="sub-left text-center text-lg-start py-2">
-                    <h4 className="text-white ">DON'T MISS OUR FUTURE UPDATES! GET SUBSCRIBED TODAY!</h4>
+                        <p className="mb-1 pink">DON'T MISS OUR FUTURE UPDATES</p>
+                    <h4 className="text-white ">WHERE CONVERSATIONS IGNITE COLLABORATION</h4>
                     </div>
                 </div>
                 <div className="col-lg-6">
                     <div className="sub-right py-2">
-                        <p className="text-white mb-4 text-center text-lg-start"> Excepteur sint occaecat cupidatat non proident, sunt
-                            in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p className="text-white mb-4 text-center text-lg-start">Send us your thoughts, inquiries, or opportunities to collaborate — every message helps shape the dialogue toward a food-secure future.</p>
                         <SubscribeForm />
                     </div>
                 </div>

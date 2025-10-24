@@ -238,6 +238,23 @@
   font-size: 14px;
 }
 
+.btn-theme-action{
+  transition: background-color 0.25s ease, color 0.25s ease, font-weight 0.25s ease;
+  border: 1px solid transparent;
+}
+.btn-theme-action span, .btn-theme-action {
+  transition: color 0.2s ease, font-weight 0.2s ease;
+}
+.btn-theme-action:hover, .btn-theme-action:focus{
+  background-color: #f3f4f5; 
+  color: #1D4413 !important;
+  border-color: rgba(0,0,0,0.06);
+}
+.btn-theme-action:hover span, .btn-theme-action:focus span{
+  font-weight: 700; 
+  color: #1D4413 !important; 
+}
+
 
 /*Banner CSS*/
 .banner{
@@ -260,11 +277,18 @@
   background-repeat: no-repeat;
  background-position: center ;
 }
+.banner-button .btn {
+  background-color: green;   /* green background */
+  color: white;              /* white text */
+  font-weight: normal;       /* normal by default */
+  border: 2px solid green;   /* keep border for hover effect */
+  transition: all 0.3s ease; /* smooth effect */
+}
 
-.banner-button .btn2:hover{
-  background-color: var(--color-accent) ;
-  border-color: var(--color-accent);
-  transition:all 0.5s ease-in-out;
+.banner-button .btn:hover {
+  background-color: transparent; /* transparent background */
+  color: green;                  /* green text */
+  font-weight: bold;             /* bold text */
 }
 
 .wave{

@@ -116,7 +116,7 @@ function Eventdetail() {
                     <div className="col-lg-4">
                         <div className="event-detail-right text-center">
                             <div className="event-ticket-price d-md-flex align-items-center justify-content-center justify-content-lg-start mb-5">
-                                <Link className="btn me-4 m-sm-0" to="/book-now">Buy Ticket</Link>
+                                <Link className="btn me-4 m-sm-0 btn-theme-action" to="/book-now">Buy Ticket</Link>
                                 <h6 className="pink py-2">$50.50</h6>
                             </div>
                             <div className="organizers-box p-6 box-shadow rounded mb-6">

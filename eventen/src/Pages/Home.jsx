@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import Countdown from "../Components/Countdown";
 
 function Home() {
-
   const [selectedSpeaker, setSelectedSpeaker] = useState(null);
 
   const speakers = {
@@ -16,12 +15,12 @@ function Home() {
       img: "assets/images/team/1.jpg",
       bio: "Expert in event hosting and motivational speaking.",
     },
-      amit: {
-    name: "AMIT SHARMA",
-    role: "Keynote Speaker",
-    img: "assets/images/team/2.jpg",
-    bio: "Specialist in technology and innovation."
-  },
+    amit: {
+      name: "AMIT SHARMA",
+      role: "Keynote Speaker",
+      img: "assets/images/team/2.jpg",
+      bio: "Specialist in technology and innovation.",
+    },
     nelson: {
       name: "NELSON KETY",
       role: "Host & Speaker",
@@ -79,40 +78,42 @@ function Home() {
                 <div className="banner-right  ms-2 text-center text-lg-start pb-8">
                   <div className="banner-title pb-3">
                     <h4 className="text-black pb-3">
-                      UPCOMING NEW <span className="pink">EVENT</span> 2023
+                      THE <span className="pink">FIRE</span> THAT
                     </h4>
                     <h1 className="text-black">
-                      STARTUP <span className="pink">GLOBAL</span> CONFERENCE
+                      FEEDS <span className="pink">THE</span> FUTURE
                     </h1>
                   </div>
                   <div className="banner-event-info pb-3">
                     <ul className="m-0 ps-0 d-sm-flex justify-content-center justify-content-lg-start list-unstyled">
                       <li className="pe-2 border-end border-1 border-lightgrey">
-                        <i className="fa  fa-calendar-o pe-1"></i> 22-24 MAY
-                        2024
+                        <i className="fa  fa-calendar-o pe-1"></i> 6&7 May, 2026
                       </li>
                       <li className="ps-2">
-                        <i className="fa  fa-map-marker pe-1"></i> QUEENBAY MALL
-                        4217 ROAD, USA
+                        <i className="fa  fa-map-marker pe-1"></i> Dubai
                       </li>
                     </ul>
                   </div>
                   <div className="event-discription">
                     <p className="pb-4 m-0">
-                      Excepteur sint occaecat cupidatat non proident, sunt in
-                      culpa qui officia deserunt mollit anim id est laborum.
+                      In 2026, Dubai becomes the epicenter of a global movement
+                      where leaders, innovators, and nations unite to secure the
+                      world’s food future.
                     </p>
                     <div className="banner-button">
                       <div className="row">
                         <div className="col-lg-6 col-md-6">
-                          <Link to="/Booknow" className="btn me-3 my-1 w-100">
+                          <Link
+                            to="/Booknow"
+                            className="btn me-3 my-1 w-100 btn-theme-action"
+                          >
                             PURCHASE TICKET
                           </Link>
                         </div>
                         <div className="col-lg-6 col-md-6">
                           <Link
                             to="/Eventlists"
-                            className="btn btn2 my-1 w-100"
+                            className="btn btn2 my-1 w-100 btn-theme-action"
                           >
                             VIEW SCHEDULE
                           </Link>
@@ -151,20 +152,32 @@ function Home() {
               <div className="col-lg-6">
                 <div className="overview-left text-center text-lg-start">
                   <div className="overview-title pb-4">
-                    <p className="mb-1 pink">OVERVIEW</p>
+                    <p className="mb-1 pink">Food Security SummitX 2026 </p>
                     <h2 className="mb-2">
-                      GET THE LATEST INFO ABOUT{" "}
-                      <span className="pink">EVENTEN</span>
+                      Igniting Change in Global{" "}
+                      <span className="pink">Food Security</span>
                     </h2>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      As the world faces mounting challenges in food systems,
+                      from water scarcity to climate change ,the need for
+                      innovation and collaborative solutions has never been more
+                      urgent. Building on the momentum of the inaugural 2025
+                      summit, Food Security SummitX 2026 (2nd Edition) returns
+                      as a catalyst for actionable change. This premier
+                      conference brings together startups, investors,
+                      policymakers, and industry leaders to forge innovation,
+                      investment, and sustainability into real-world solutions
+                      for our food future. It’s not just a conference, it’s a
+                      movement to ensure that the spark of change lit last year
+                      continues to grow into a sustainable flame transforming
+                      global food security.
                     </p>
                     <p className="mb-2">
-                      Excepteur sint occaecat cupidatat non proident, sunt in
-                      culpa qui officia deserunt mollit anim id est laborum.
+                      <i>
+                        “The journey towards global food security begins here...
+                        Secure your spot now and be at the forefront of this
+                        crucial movement. Together, we nourish the future.”
+                      </i>
                     </p>
                   </div>
                   <div className="overview-event-info pb-6 g-4 text-start position-absolute">
@@ -190,20 +203,26 @@ function Home() {
                       </div>
 
                       <div className="col-lg-6 col-md-6">
-                        <a href="/">
-                          <div className="event-info-box align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
-                            <div className="event-info-icon text-center">
-                              <i className="fa fa-calendar-o  text-white bg-pink rounded-circle me-3 text-black"></i>
-                            </div>
-                            <div className="time-info">
-                              <h5 className="mb-1">WHEN</h5>
-                              <small>
-                                Wednesday To Thursday <br /> Apr, 21-25, 2024
-                              </small>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
+  <a
+    href="https://www.google.com/calendar/render?action=TEMPLATE&text=Awesome+Event&dates=20240421T090000Z/20240425T170000Z&details=Join+us+for+this+amazing+event&location=Event+Location"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Add Awesome Event to Google Calendar"
+  >
+    <div className="event-info-box align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
+      <div className="event-info-icon text-center">
+        <i className="fa fa-calendar-o text-white bg-pink rounded-circle me-3 text-black"></i>
+      </div>
+      <div className="time-info">
+        <h5 className="mb-1">WHEN</h5>
+        <small>
+          Wednesday To Thursday <br /> Apr, 21-25, 2024
+        </small>
+      </div>
+    </div>
+  </a>
+</div>
+
                     </div>
                   </div>
                 </div>
@@ -254,11 +273,12 @@ function Home() {
             <div className="partner-title text-center pb-6 w-lg-60 m-auto">
               <p className="mb-1 pink">OUR PARTNERS</p>
               <h2 className="mb-1">
-                SPONSERS AND <span className="pink">PARTNERS</span>
+                UNITED FOR A FOOD-SECURE <span className="pink">FUTURE</span>
               </h2>
               <p className="m-0">
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum.
+                From ministries to market leaders, our partners represent the
+                collective power of innovation, investment, and impact shaping
+                tomorrow’s food systems.
               </p>
             </div>
             <div className="partner-img pb-6">
@@ -372,148 +392,94 @@ function Home() {
           <div className="feature-inner">
             {/* Counter Section */}
             <div className="counter text-center border-bottom border-dark border-opacity-25">
-              <div className="inner-counter mb-7">
-                <div className="row">
-                  <div className="col-lg-3 col-md-3 p-2">
-                    <div className="counter-box p-2 border-end border-dark border-opacity-25">
-                      <CountUpBox end={300} label="Journalist" />
-                    </div>
+              <div className="inner-counter mb-7 d-flex justify-content-between flex-wrap">
+                {[
+                  { end: 750, label: "Leaders" },
+                  { end: 400, label: "Organisations" },
+                  { end: 40, label: "Awards" },
+                  { end: 50, label: "Media Partners" },
+                  { end: 40, label: "Exhibitors" },
+                ].map((item, i, arr) => (
+                  <div
+                    key={i}
+                    className={`counter-box flex-fill p-2 text-center ${
+                      i !== arr.length - 1
+                        ? "border-end border-dark border-opacity-25"
+                        : ""
+                    }`}
+                  >
+                    <CountUpBox end={item.end} label={item.label} />
                   </div>
-                  <div className="col-lg-3 col-md-3 p-2">
-                    <div className="counter-box p-2 border-end border-dark border-opacity-25">
-                      <CountUpBox end={120} label="Events" />
-                    </div>
-                  </div>
-                  <div className="col-lg-3 col-md-3 p-2">
-                    <div className="counter-box p-2 border-end border-dark border-opacity-25">
-                      <CountUpBox end={50} label="Awards" />
-                    </div>
-                  </div>
-                  <div className="col-lg-3 col-md-3 p-2">
-                    <div className="counter-box p-2 border-opacity-25">
-                      <CountUpBox end={1000} label="Members" />
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
 
             {/* Feature Boxes */}
             <div className="feature-lists pt-8">
               <div className="row g-4">
-                {/* Box 1 */}
-                <div className="col-lg-4 col-md-6">
-                  <div className="feature-box py-7 px-6 rounded bg-light bg-opacity-75 shadow-sm">
-                    <a href="/">
-                      <div className="feature-box-icon mb-4">
-                        <i className="fa fa-address-book-o text-black bg-pink rounded-circle text-center p-3"></i>
-                      </div>
-                      <div className="feature-box-info">
-                        <h5 className="text-black mb-2">LIVE STREAMING</h5>
-                        <small className="text-muted">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore.
-                        </small>
-                      </div>
-                    </a>
+                {[
+                  {
+                    icon: "fa-address-book-o",
+                    title: "BRANDING",
+                    text: "Where your identity meets global influence. Make your mark on the world stage of innovation and sustainability.",
+                  },
+                  {
+                    icon: "fa-comments",
+                    title: "SPEAKER",
+                    text: "Inspire change. Share insights that ignite minds and shape the conversation on food, tech, and transformation.",
+                  },
+                  {
+                    icon: "fa-desktop",
+                    title: "NETWORKING",
+                    text: "Connect with the visionaries driving tomorrow. Build alliances that turn ideas into real-world impact.",
+                  },
+                  {
+                    icon: "fa-cogs",
+                    title: "SPONSOR",
+                    text: "Be the force that fuels progress. Empower global collaboration and spotlight your leadership in food security.",
+                  },
+                  {
+                    icon: "fa-gift",
+                    title: "EXHIBIT",
+                    text: "Showcase innovation that matters. Present your solutions to decision-makers redefining the future of food and agriculture.",
+                  },
+                  {
+                    icon: "fa-graduation-cap",
+                    title: "AWARDS",
+                    text: "Celebrate brilliance. Honor the pioneers transforming the world through innovation, sustainability, and purpose.",
+                  },
+                  {
+                    icon: "fa-handshake-o",
+                    title: "STARTUP PITCH",
+                    text: "Where bold ideas meet real opportunity. Present your innovation before global investors shaping the future of food and AgriTech.",
+                  },
+                  {
+                    icon: "fa-users",
+                    title: "INVESTMENT",
+                    text: "Fueling transformation through capital and collaboration. Connect with investors driving sustainable growth and scalable impact across agriculture.",
+                  },
+                  {
+                    icon: "fa-id-badge",
+                    title: "LEAD GENERATION",
+                    text: "Expand your network. Engage with qualified buyers, partners, and clients who matter most to your business growth and global reach.",
+                  },
+                ].map((item, i) => (
+                  <div key={i} className="col-lg-4 col-md-6">
+                    <div className="feature-box py-7 px-6 rounded bg-light bg-opacity-75 shadow-sm">
+                      <a href="/">
+                        <div className="feature-box-icon mb-4">
+                          <i
+                            className={`fa ${item.icon} text-black bg-pink rounded-circle text-center p-3`}
+                          ></i>
+                        </div>
+                        <div className="feature-box-info">
+                          <h5 className="text-black mb-2">{item.title}</h5>
+                          <small className="text-muted">{item.text}</small>
+                        </div>
+                      </a>
+                    </div>
                   </div>
-                </div>
-
-                {/* Box 2 */}
-                <div className="col-lg-4 col-md-6">
-                  <div className="feature-box py-7 px-6 rounded bg-light bg-opacity-75 shadow-sm">
-                    <a href="/">
-                      <div className="feature-box-icon mb-4">
-                        <i className="fa fa-comments text-black bg-pink rounded-circle text-center p-3"></i>
-                      </div>
-                      <div className="feature-box-info">
-                        <h5 className="text-black mb-2">FIRESIDE CHATS</h5>
-                        <small className="text-muted">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore.
-                        </small>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-
-                {/* Box 3 */}
-                <div className="col-lg-4 col-md-6">
-                  <div className="feature-box py-7 px-6 rounded bg-light bg-opacity-75 shadow-sm">
-                    <a href="/">
-                      <div className="feature-box-icon mb-4">
-                        <i className="fa fa-desktop text-black bg-pink rounded-circle text-center p-3"></i>
-                      </div>
-                      <div className="feature-box-info">
-                        <h5 className="text-black mb-2">NETWORKING</h5>
-                        <small className="text-muted">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore.
-                        </small>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-
-                {/* Box 4 */}
-                <div className="col-lg-4 col-md-6">
-                  <div className="feature-box py-7 px-6 rounded bg-light bg-opacity-75 shadow-sm">
-                    <a href="/">
-                      <div className="feature-box-icon mb-4">
-                        <i className="fa fa-cogs text-black bg-pink rounded-circle text-center p-3"></i>
-                      </div>
-                      <div className="feature-box-info">
-                        <h5 className="text-black mb-2">HIGH VALUE LEARNING</h5>
-                        <small className="text-muted">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore.
-                        </small>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-
-                {/* Box 5 */}
-                <div className="col-lg-4 col-md-6">
-                  <div className="feature-box py-7 px-6 rounded bg-light bg-opacity-75 shadow-sm">
-                    <a href="/">
-                      <div className="feature-box-icon mb-4">
-                        <i className="fa fa-gift text-black bg-pink rounded-circle text-center p-3"></i>
-                      </div>
-                      <div className="feature-box-info">
-                        <h5 className="text-black mb-2">EXCITING GIVEAWAYS</h5>
-                        <small className="text-muted">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore.
-                        </small>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-
-                {/* Box 6 */}
-                <div className="col-lg-4 col-md-6">
-                  <div className="feature-box py-7 px-6 rounded bg-light bg-opacity-75 shadow-sm">
-                    <a href="/">
-                      <div className="feature-box-icon mb-4">
-                        <i className="fa fa-graduation-cap text-black bg-pink rounded-circle text-center p-3"></i>
-                      </div>
-                      <div className="feature-box-info">
-                        <h5 className="text-black mb-2">1-ON-1 SESSIONS</h5>
-                        <small className="text-muted">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore.
-                        </small>
-                      </div>
-                    </a>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
@@ -531,11 +497,10 @@ function Home() {
                   <div className="title-content  text-lg-start mb-2">
                     <p className="mb-1 pink">EVENT SPEAKERS</p>
                     <h2 className="mb-1">
-                      MEET OUR <span className="pink">SPEAKERS</span>
+                      MEET OUR <span className="pink">VISIONARIES</span>
                     </h2>
                     <p className="m-0">
-                      Excepteur sint occaecat cupidatat non proident, sunt in
-                      culpa qui officia deserunt mollit anim id est laborum.
+                   Join distinguished voices from across the world as they discuss emerging trends, opportunities, and solutions driving food security and agricultural innovation.
                     </p>
                   </div>
                 </div>
@@ -675,16 +640,15 @@ function Home() {
         <div className="container">
           <div className="ticket-inner w-lg-75 mx-auto text-center position-relative text-white">
             <div className="ticket-title">
-              <h5 className="text-black mb-1">LET'S DO IT HURRY</h5>
+              <h5 className="text-black mb-1">THE COUNTDOWN HAS BEGUN</h5>
               <h1 className="text-black mb-2">
-                HAVEN'T BOOKED YOUR SEAT YET?{" "}
-                <span className="pink">Get Ticket</span>
+                HAVE YOU RESERVED YOUR SEAT YET?{" "}
+                <span className="pink">BOOK NOW.</span>
               </h1>
             </div>
             <div className="ticket-info">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                Be part of the global movement shaping food security. Reserve your Early Bird pass today and join leaders redefining the future in Dubai 2026.
               </p>
               <div className="ticket-button">
                 <Link to="/Booknow" className="btn">
@@ -770,28 +734,32 @@ function Home() {
                             />
                           </div>
                           <div className="schedule-bio-info">
-              <p className="mt-1 mb-0">
-                <button
-                  className="pink border-0 bg-transparent"
-                  onClick={() => setSelectedSpeaker(speakers.jesus)}
-                >
-                  JESUS HOLLAND
-                </button>
-              </p>
-              <small>Host & Speaker</small>
-            </div>
+                            <p className="mt-1 mb-0">
+                              <button
+                                className="pink border-0 bg-transparent"
+                                onClick={() =>
+                                  setSelectedSpeaker(speakers.jesus)
+                                }
+                              >
+                                JESUS HOLLAND
+                              </button>
+                            </p>
+                            <small>Host & Speaker</small>
+                          </div>
 
-             <div className="schedule-bio-info">
-              <p className="mt-1 mb-0">
-                <button
-                  className="pink border-0 bg-transparent"
-                  onClick={() => setSelectedSpeaker(speakers.amit)}
-                >
-                  AMIT SHARMA
-                </button>
-              </p>
-              <small>Keynote Speaker</small>
-            </div>
+                          <div className="schedule-bio-info">
+                            <p className="mt-1 mb-0">
+                              <button
+                                className="pink border-0 bg-transparent"
+                                onClick={() =>
+                                  setSelectedSpeaker(speakers.amit)
+                                }
+                              >
+                                AMIT SHARMA
+                              </button>
+                            </p>
+                            <small>Keynote Speaker</small>
+                          </div>
                         </div>
                       </div>
                       <div className=" schedule-list-box bg-lightgrey   border border-white border-2 rounded px-6 py-4 mb-5">
@@ -836,18 +804,19 @@ function Home() {
                               className="me-2 rounded-circle"
                             />
                           </div>
-                           <div className="schedule-bio-info">
-              <p className="mt-1 mb-0">
-                <button
-                  className="pink border-0 bg-transparent"
-                  onClick={() => setSelectedSpeaker(speakers.nelson)}
-                >
-                  NELSON KETY
-                </button>
-              </p>
-              <small>Host & Speaker</small>
-            </div>
-
+                          <div className="schedule-bio-info">
+                            <p className="mt-1 mb-0">
+                              <button
+                                className="pink border-0 bg-transparent"
+                                onClick={() =>
+                                  setSelectedSpeaker(speakers.nelson)
+                                }
+                              >
+                                NELSON KETY
+                              </button>
+                            </p>
+                            <small>Host & Speaker</small>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -912,16 +881,18 @@ function Home() {
                             />
                           </div>
                           <div className="schedule-bio-info">
-              <p className="mt-1 mb-0">
-                <button
-                  className="pink border-0 bg-transparent"
-                  onClick={() => setSelectedSpeaker(speakers.peelrs)}
-                >
-                  PEELRS HELM
-                </button>
-              </p>
-              <small>Host & Speaker</small>
-            </div>
+                            <p className="mt-1 mb-0">
+                              <button
+                                className="pink border-0 bg-transparent"
+                                onClick={() =>
+                                  setSelectedSpeaker(speakers.peelrs)
+                                }
+                              >
+                                PEELRS HELM
+                              </button>
+                            </p>
+                            <small>Host & Speaker</small>
+                          </div>
                         </div>
                       </div>
                       <div className=" schedule-list-box bg-lightgrey   border border-white border-2 rounded px-6 py-4 mb-5">
@@ -1206,11 +1177,10 @@ function Home() {
                   <div className="title-content  text-lg-start">
                     <p className="mb-1 pink">EVENT GALLERY</p>
                     <h2 className="mb-1">
-                      WAS AN AMAGING <span className="pink">GALLERY</span>
+                     WHERE THE SPARK  <span className="pink">BEGAN</span>
                     </h2>
                     <p className="m-0 text-black">
-                      Excepteur sint occaecat cupidatat non proident, sunt in
-                      culpa qui officia deserunt mollit anim id est laborum.
+                      What started as a spark in our last edition now fuels a global movement. These moments capture the passion, purpose, and connections that lit the fire for Food Security SummitX 2026.
                     </p>
                   </div>
                 </div>
@@ -1235,11 +1205,10 @@ function Home() {
           <div className="section-title w-lg-60 m-auto text-center pb-5">
             <p className="mb-1  pink">OUR TESTIMONIALS</p>
             <h2 className="mb-1">
-              WHAT PEOPLES'S SAYS ABOUT <span className="pink">EVENTEN</span>
+              VOICES THAT KEEP THE FIRE <span className="pink">ALIVE</span>
             </h2>
             <p className="m-0">
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
+              Our past participants call it transformative. From meaningful partnerships to powerful insights, their words reflect the energy, collaboration, and impact that continue to drive Food Security SummitX forward.
             </p>
           </div>
           <TestimonialSlider />
@@ -1258,11 +1227,10 @@ function Home() {
                   <div className="section-title pb-3 text-center text-lg-start">
                     <p className="mb-1 pink">GENERAL QUESTIONS</p>
                     <h2 className="mb-2 text-white">
-                      FREQUENT ASKED <span className="pink">QUESTIONS!!</span>
+                      FREQUENT ASKED <span className="pink">QUESTIONS</span>
                     </h2>
                     <p className="text-white">
-                      Excepteur sint occaecat cupidatat non proident, sunt in
-                      culpa qui officia deserunt mollit anim id est laborum.
+                      Find quick answers to everything you need to know, from registration details and passes to participation options and event logistics for Food Security SummitX 2026 in Dubai.
                     </p>
                   </div>
                   <div className="faq-accordion p-4 mb-5 bg-white rounded">
@@ -1422,11 +1390,10 @@ function Home() {
           <div className="section-title text-center pb-2 w-lg-60 m-auto">
             <p className="mb-1  pink">REACH US</p>
             <h2 className="mb-1">
-              GET DIRECTION TO THE <span className="pink">EVENT HALL</span>
+              FIND YOUR WAY TO THE  <span className="pink">FUTURE</span>
             </h2>
             <p className="mb-0">
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
+              Dubai awaits — a city where ideas, innovation, and collaboration converge. Join us at Food Security SummitX 2026 and step into the movement shaping tomorrow.
             </p>
           </div>
           <div className="direction-content">
@@ -1451,7 +1418,7 @@ function Home() {
                 </div>
                 <div className="col-lg-7 col-md-7 px-1 py-2">
                   <iframe
-                  title="Mangal Bazar Location Map"
+                    title="Mangal Bazar Location Map"
                     height="400"
                     className="rounded w-100"
                     src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=+(mangal%20bazar)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
@@ -1513,11 +1480,10 @@ function Home() {
                 <div className="blog-title text-center text-lg-start p-2">
                   <p className="mb-1 pink">RECENT NEWS</p>
                   <h2 className="mb-1">
-                    READ MY <span className="pink">NEWS </span>TO KNOW MORE
+                    THE CONVERSATION  <span className="pink">CONTINUES  </span>HERE
                   </h2>
                   <p className="mb-0">
-                    Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    Explore the latest stories, insights, and global updates from across the food and agriculture ecosystem — featuring voices, companies, and movements shaping a food-secure future.
                   </p>
                 </div>
               </div>
@@ -1616,7 +1582,7 @@ function Home() {
       </section>
       {/*--Blog Section end--*/}
 
-       {/* Modal */}
+      {/* Modal */}
       {selectedSpeaker && (
         <div className="modal-overlay" onClick={() => setSelectedSpeaker(null)}>
           <div
